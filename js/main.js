@@ -7,7 +7,7 @@
         // The shim config allows us to configure dependencies for
         // scripts that do not call define() to register a module
         // waitSeconds:0 prevents require from timing out on slow networks
-        waitSeconds: 0,
+        // waitSeconds: 0,
 
         shim: {
             underscore: {
@@ -31,13 +31,13 @@
             }
         },
         paths: {
-            jquery: 'js/vendor/jquery/jquery-1.11.2.min',
-            jquery_prefilter: 'js/vendor/jquery/ajax_prefilter',
-            underscore: 'js/vendor/underscore/underscore-1.8.3.min',
-            handlebars: 'js/vendor/handlebars/handlebars-4.0.5.min',
-            backbone: 'js/vendor/backbone/backbone-1.2.3.min',
-            text: 'js/vendor/require/text-2.0.14.min',
-            bootstrap: 'js/vendor/bootstrap/bootstrap.min'
+            jquery: 'vendor/jquery/jquery-1.11.2.min',
+            jquery_prefilter: 'vendor/jquery/ajax_prefilter',
+            underscore: 'vendor/underscore/underscore-1.8.3.min',
+            handlebars: 'vendor/handlebars/handlebars-4.0.5.min',
+            backbone: 'vendor/backbone/backbone-1.2.3.min',
+            text: 'vendor/require/text-2.0.14.min',
+            bootstrap: 'vendor/bootstrap/bootstrap.min'
         }
     });
 
@@ -45,7 +45,7 @@
         'backbone',
         'bootstrap',
         'app/helpers/handlebar_helpers',
-        'app/routers/router'
+        'app/router/router'
     ], function(Backbone, Bootstrap, HandlebarHelpers, Workspace) {
         'use strict';
 
@@ -56,10 +56,7 @@
         //     root: '/pub/w/'
         // });
 		
-		Backbone.history.start({
-            pushState: true,
-            root: '/pub/w/'
-        });
+		Backbone.history.start();
 
         $(document).on('click', 'a', function(evt) {
             // evt.preventDefault();
