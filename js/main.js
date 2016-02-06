@@ -31,13 +31,13 @@
             }
         },
         paths: {
-            jquery: 'js/vendor/jquery/jquery.min',
-            jquery_prefilter: 'js/vendor/jquery/ajax_spinner_prefilter',
-            underscore: 'js/vendor/underscore/underscore-1.7.0.min',
-            handlebars: 'js/vendor/handlebars/handlebars.min-2.0.0',
-            backbone: 'js/vendor/backbone/backbone.min-0.9.10',
-            text: 'js/vendor/requirejs-text/text.min-2.0.5',
-            bootstrap: 'js/vendor/bootstrap/bootstrap.min-3.2.0'
+            jquery: 'js/vendor/jquery/jquery-1.11.2.min',
+            jquery_prefilter: 'js/vendor/jquery/ajax_prefilter',
+            underscore: 'js/vendor/underscore/underscore-1.8.3.min',
+            handlebars: 'js/vendor/handlebars/handlebars-4.0.5.min',
+            backbone: 'js/vendor/backbone/backbone-1.2.3.min',
+            text: 'js/vendor/require/text-2.0.14.min',
+            bootstrap: 'js/vendor/bootstrap/bootstrap.min'
         }
     });
 
